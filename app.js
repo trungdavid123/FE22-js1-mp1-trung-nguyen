@@ -121,6 +121,7 @@ for(let i = 0; i <= 9; i++){
     }
 
     if(i == 6 - 1){
+        console.log('gott morgon!')
         item.style.background = "none"
     }
 
