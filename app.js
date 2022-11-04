@@ -8,7 +8,7 @@ const boxChild_3 = document.createElement('div');
 
 const boxParent = document.createElement('div'); 
 
-
+// RAD SECTION     
 for(let i = 0; i <= 5; i++){
     const container = document.createElement('div'); 
     container.style.cssText = `
@@ -26,6 +26,9 @@ for(let i = 0; i <= 5; i++){
 
 
 
+// FIRST LIST OF NUMBER 
+
+
 for(let i = 0; i <= 9; i++){
     const item = document.createElement('div'); 
 
@@ -34,6 +37,7 @@ for(let i = 0; i <= 9; i++){
     padding: 10px; 
     background: #a8a8f0
     `
+
     
     if(i % 2 == 0){
         item.style.cssText = `
@@ -46,11 +50,19 @@ for(let i = 0; i <= 9; i++){
     `;
     }
 
+    if(i == 4){
+        item.style.background = "none"
+    }
+
     item.innerHTML = i; 
     boxChild_1.append(item);
     boxParent.append(boxChild_1);
     body.append(boxParent);
 }
+
+
+// SECOND LIST OF NUMBER 
+
 
 for(let i = 9; i >= 0; i--){
     const item = document.createElement('div'); 
@@ -73,12 +85,20 @@ for(let i = 9; i >= 0; i--){
     `;
     }
 
+    if(i == 8){
+        item.style.background = "none"
+    }
+
+
     item.innerHTML = i; 
     boxChild_2.append(item);
     boxParent.append(boxChild_2);
     body.append(boxParent);
 }
  
+
+// THIRD LIST OF NUMBER 
+
 for(let i = 0; i <= 9; i++){
     const item = document.createElement('div'); 
 
@@ -98,6 +118,10 @@ for(let i = 0; i <= 9; i++){
         item.style.cssText = `
          background: white
     `;
+    }
+
+    if(i == 6 - 1){
+        item.style.background = "none"
     }
 
     item.innerHTML = numbers[i]; 
